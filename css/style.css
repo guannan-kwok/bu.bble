@@ -18,3 +18,14 @@
 .footer{
     background-color: #91b4ff;
 }
+
+.footer-copyright{
+  background-color: #c7d3ec;
+}
+
+.social{
+  width: 48px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
