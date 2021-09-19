@@ -2,13 +2,14 @@
     margin-left: auto;
     margin-right: 0 !important;
     padding: 0px 50px;
-
+    font-family: Montserrat, sans-serif;
   }
 
 .title{
   font-weight: bold;
   color: white;
 }
+
 
 .navbar-brand{
     padding: 0px 25px;
@@ -18,6 +19,10 @@
     padding: 0px 25px;
     margin-top: -7px;
     max-width: 130px;
+}
+
+.home{
+  max-width: 200px;
 }
 
 .footer{
@@ -35,6 +40,9 @@
   margin-right: auto;
 }
 
+.about{
+  max-width: 35vh;
+}
 
 .accordion{
   padding: 50px 50px;
@@ -65,7 +73,11 @@ h4 {
   color: #303030;
   font-weight: 400;
   margin-bottom: 30px;
-}  
+} 
+
+h1, h2, h4, h5{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .btn2 {
   padding: 10px 20px;
@@ -73,11 +85,13 @@ h4 {
   color: #f1f1f1;
   border-radius: 0;
   transition: .2s;
+  border: none;
 }
 .btn2:hover, .btn2:focus {
   border: 1px solid #333;
   background-color: #fff;
   color: #000;
+  border: none;
 }
 
 .container2 {
