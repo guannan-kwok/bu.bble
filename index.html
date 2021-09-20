@@ -18,12 +18,13 @@
         <!-- Google fonts/icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
     </head>
 
-    <body>
+    <body data-spy='scroll' data-target=".navbar">
     <!-- Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #91b4ff;">
-        <a class="navbar-brand" href="#"> <img class ="logo" src="images/logo.png"> <img class="home" src="images/bu.bble.png"></a>
+        <a class="navbar-brand" href="#banner"> <img class ="logo" src="images/logo.png"> <img class="home" src="images/bu.bble.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,23 +32,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="#">Features <span class="sr-only"></span></a>
+            <a class="nav-link" href="#features">Features <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
             </li>
         </ul>
         </div>
     </nav>
 
    <!-- Jumbotron Banner -->
-   <div class="jumbotron">
+   <div class="jumbotron" id="banner">
      <div class="jumbotron-spacing">
        <h1 class="display-4">bu.bble</h1>
         <p class="lead">bu.ble is a mental health platform where users can anonymously share their frustrations as well as other personal thoughts/feelings. A safe space where users can also anonymously seek help from mental health care professionals and find activities to help them heal.</p>
@@ -58,6 +59,36 @@
      </div>
     </div>
    
+    <!-- Feature Gallery -->
+    <div class="gallery" id="features">
+      <div class="row">
+        <div class="col card" style="width: 18rem;">
+          <img src="./images/home.png" class="card-img-top" alt="Home feed">
+          <div class="card-body">
+            <h5 class="card-title">View posts from your home screen.</h5>
+          </div>
+        </div>
+        <div class="col card" style="width: 18rem;">
+          <img src="./images/post.png" class="card-img-top" alt="Post editor">
+          <div class="card-body">
+            <h5 class="card-title">Create public or private posts.</h5>
+          </div>
+        </div>
+        <div class="col card" style="width: 18rem;">
+          <img src="./images/support.png" class="card-img-top" alt="Support center">
+          <div class="card-body">
+            <h5 class="card-title">Access helpful resources through the Support Center.</h5>
+          </div>
+        </div>
+        <div class="col card" style="width: 18rem;">
+          <img src="./images/diary.png" class="card-img-top" alt="Diary">
+          <div class="card-body">
+            <h5 class="card-title">Review your previous activity and private posts in your diary.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Container (About Section) -->
     <section>
       <div id="about" class="container-fluid">
@@ -78,85 +109,87 @@
       </section>
 
      <!-- FAQ -->
-     <h1> Frequently Asked Questions</h1>
-    <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                 <h5> What is bu.bble? </h5>
-              </button>
-            </h2>
-          </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-                bu.bble is a mental health platform where users can anonymously share their frustrations and personal thoughts or feelings. Users can also anonymously seek help from mental health care professionals and find activities to help them reliev stress.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h5> What devices does bu.bble support?</h5>
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              bu.bble is currently supported on all IOS and Android devices. A desktop version will be available November 2021.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h5>What posting options do I have? </h5>
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              bu.bble lets you add hashtags to better categorize your posts. You can also choose to post publically or privately. <br> <br> Public post appear at random on other users feeds. 
-              <br> <br> Private posts appear in your diary and are only viewable in this section.
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" id="headingFour">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <h5> What privacy options do I have? </h5>
-                </button>
-              </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                bu.bble allows you to delete public and private posts at any time. bu.bble allows you to wipe all personal data if uninstalling the application.
-              </div>
-            </div>
-          </div>
-
+     <div id="faq">
+      <h1> Frequently Asked Questions</h1>
+      <div class="accordion" id="accordionExample">
           <div class="card">
-            <div class="card-header" id="headingFive">
+            <div class="card-header" id="headingOne">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  <h5> What mental health support is provided?</h5>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <h5> What is bu.bble? </h5>
                 </button>
               </h2>
             </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                bu.bble allows you to schedule a one-on-one meeting with a mental health professional. You can do this via phone call, by messaging or meet up in person at the health facility. <br> <br> bu.bble also provided curated resources to relieve stress and anxiety.
+                  bu.bble is a mental health platform where users can anonymously share their frustrations and personal thoughts or feelings. Users can also anonymously seek help from mental health care professionals and find activities to help them reliev stress.
               </div>
             </div>
           </div>
-
-      </div>
+  
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5> What devices does bu.bble support?</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                bu.bble is currently supported on all IOS and Android devices. A desktop version will be available November 2021.
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5>What posting options do I have? </h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                bu.bble lets you add hashtags to better categorize your posts. You can also choose to post publically or privately. <br> <br> Public post appear at random on other users feeds. 
+                <br> <br> Private posts appear in your diary and are only viewable in this section.
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h5> What privacy options do I have? </h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  bu.bble allows you to delete public and private posts at any time. bu.bble allows you to wipe all personal data if uninstalling the application.
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h5> What mental health support is provided?</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                  bu.bble allows you to schedule a one-on-one meeting with a mental health professional. You can do this via phone call, by messaging or meet up in person at the health facility. <br> <br> bu.bble also provided curated resources to relieve stress and anxiety.
+                </div>
+              </div>
+            </div>
+  
+        </div>
+     </div>
 
     
     

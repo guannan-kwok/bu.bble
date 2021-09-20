@@ -130,3 +130,20 @@ h1, h2, h4, h5{
 .jumbotron p{
   padding: 50px;
 }
+
+.gallery{
+  padding: 150px;
+}
+
+.card{
+  border: none;
+}
+
+.card-body{
+  padding: 0px;
+  text-align: center;
+}
+
+.card-title{
+  color: #91b4ff;
+}
