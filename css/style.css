@@ -2,10 +2,16 @@
     margin-left: auto;
     margin-right: 0 !important;
     padding: 0px 50px;
-
+    font-family: Montserrat, sans-serif;
   }
 
-  navbar-brand{
+.title{
+  font-weight: bold;
+  color: white;
+}
+
+
+.navbar-brand{
     padding: 0px 25px;
   }
 
@@ -13,6 +19,10 @@
     padding: 0px 25px;
     margin-top: -7px;
     max-width: 130px;
+}
+
+.home{
+  max-width: 200px;
 }
 
 .footer{
@@ -30,4 +40,66 @@
   margin-right: auto;
 }
 
+.about{
+  max-width: 35vh;
+}
 
+.accordion{
+  padding: 50px 50px;
+}
+
+
+h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 50px 50px 10px;
+  font-weight: bold;
+}
+
+
+h5{
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+} 
+
+h1, h2, h4, h5{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn2 {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+  border: none;
+}
+.btn2:hover, .btn2:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.container2 {
+  padding: 80px 120px;
+  background-color: aliceblue;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+  background-color: aliceblue;
+}
