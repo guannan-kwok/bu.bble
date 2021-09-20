@@ -45,7 +45,7 @@
 
 .accordion{
   padding: 50px 50px;
-  background-color: #DAF6FD;
+  /* background-color: #DAF6FD;  */ 
 }
 
 
@@ -144,7 +144,7 @@ h1, h2, h4, h5{
   border: none;
 }
 
-.card-body{
+.card-body2{
   padding: 0px;
   text-align: center;
 }
