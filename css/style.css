@@ -103,3 +103,30 @@ h1, h2, h4, h5{
   padding: 60px 50px;
   background-color: aliceblue;
 }
+
+.jumbotron{
+  background-image: url(../images/banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: #DAF6FD;
+  min-height: 600px;
+  background-size: auto 600px;
+}
+
+.jumbotron-spacing{
+  max-width: 70%; 
+}
+
+.btn-group-lg>.btn, .btn-lg{
+  margin-left: 50px;
+}
+
+.btn-primary{
+  background-color: #91b4ff;
+  border-color: #91b4ff;
+}
+
+.jumbotron p{
+  padding: 50px;
+}
