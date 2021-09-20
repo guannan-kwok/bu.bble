@@ -45,7 +45,7 @@
 
 .accordion{
   padding: 50px 50px;
-  background-color: #DAF6FD;
+  /* background-color: #DAF6FD;  */ 
 }
 
 
@@ -134,4 +134,21 @@ h1, h2, h4, h5{
 
 .jumbotron p{
   padding: 50px;
+}
+
+.gallery{
+  padding: 150px;
+}
+
+.card{
+  border: none;
+}
+
+.card-body2{
+  padding: 0px;
+  text-align: center;
+}
+
+.card-title{
+  color: #91b4ff;
 }
